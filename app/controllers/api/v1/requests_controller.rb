@@ -9,7 +9,7 @@ class Api::V1::RequestsController < ApplicationController
         request = Request.new(request_params)
         # byebug
         if request.save
-            render json: request, status: :accepted
+            render json: request, include: [:category], status: :accepted
         else
             render json: {errors: request.errors.full_messages}, status: :unprocessable_entity
         end
