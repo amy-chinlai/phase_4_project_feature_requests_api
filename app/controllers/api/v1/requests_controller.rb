@@ -1,7 +1,8 @@
 class Api::V1::RequestsController < ApplicationController
     def index
         requests = Request.all
-        render json: requests, include: [:category]
+        # render json: requests, include: [:category]
+        render json: RequestSerializer.new(requests)
     end
 
     def create
@@ -9,7 +10,7 @@ class Api::V1::RequestsController < ApplicationController
         if request.save
             render json: request, status: :accepted
         else
-            render json: {errors: request.errors.full_messages}. status: :unprocessable_entity
+            render json: {errors: request.errors.full_messages}, status: :unprocessable_entity
         end
     end
 
@@ -18,5 +19,5 @@ class Api::V1::RequestsController < ApplicationController
     def request_params
         params.require(request).permit(:name, :description, :category_id)
     end
-    
+
 end
