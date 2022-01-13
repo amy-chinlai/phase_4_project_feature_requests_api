@@ -8,7 +8,10 @@
 
 categories_list = [
     "Letter Campaigns",
-    "User Interface"
+    "User Interface",
+    "Petitions", 
+    "Emails",
+    "Mobile Messaging"
 ]
 
   categories_list.each do |name|

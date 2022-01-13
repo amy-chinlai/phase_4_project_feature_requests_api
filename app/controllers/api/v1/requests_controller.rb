@@ -7,6 +7,7 @@ class Api::V1::RequestsController < ApplicationController
 
     def create
         request = Request.new(request_params)
+        # byebug
         if request.save
             render json: request, status: :accepted
         else
@@ -17,7 +18,7 @@ class Api::V1::RequestsController < ApplicationController
     private
 
     def request_params
-        params.require(request).permit(:name, :description, :category_id)
+        params.permit(:name, :description, :category_id)
     end
 
 end
