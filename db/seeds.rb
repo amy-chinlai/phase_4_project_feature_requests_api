@@ -24,17 +24,17 @@ categories_list = [
     "Make president and vice president built-in targets" => {
       :description => "This will require a lot of work!",
       :category_id => 1,
-      :vote => 1
+      :vote => true
     },
     "Add title to letters sent" => {
         :description => "This will not require a ton of work!",
         :category_id => 1,
-        :vote => 1
+        :vote => true
     },
     "Change Edit Activist to View Activist" => {
         :description => "This will not require a ton of work! Simple change.",
         :category_id => 2,
-        :vote => 1
+        :vote => false
     }
   }
 
