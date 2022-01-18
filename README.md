@@ -1,24 +1,36 @@
-# README
+# Feature Requests Tracker
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Flatiron software engineering, phase 4 project
 
-Things you may want to cover:
+This Ruby on Rails and Javascript project provides a web app to submit feature requests, favorite feature requests, and categorize feature requests. This is meant for use for product managers implementing a cooperative development model.
 
-* Ruby version
+This project works with the frontend repo, availble here: https://github.com/amy-chinlai/phase_4_project_feature_requests_frontend
 
-* System dependencies
 
-* Configuration
+## Installation
 
-* Database creation
+Go to https://github.com/amy-chinlai/phase_4_project_feature_requests_api and clone the repository to your local machine.
 
-* Database initialization
+Run `bundle install`.
 
-* How to run the test suite
+Run `rake db:migrate`.
 
-* Services (job queues, cache servers, search engines, etc.)
+Run `rake db:seed`.
 
-* Deployment instructions
 
-* ...
+## Usage
+
+Run `rails s p -7000`.
+
+Go to https://github.com/amy-chinlai/phase_4_project_feature_requests_frontend and clone the repository to your local machine.
+
+Run `open index.html`.
+
+## Contributing
+
+Bug reports and pull requests are welcome at https://github.com/amy-chinlai/phase_4_project_feature_requests_api. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the Contributor Covenant (https://github.com/amy-chinlai/phase-2-sinatra-project-button-block/blob/main/contributor-covenant.org) code of conduct.
+
+
+## License
+
+This project is available as open source under the terms of the MIT license: http://opensource.org/licenses/MIT
