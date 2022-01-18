@@ -23,15 +23,18 @@ categories_list = [
   requests_list = {
     "Make president and vice president built-in targets" => {
       :description => "This will require a lot of work!",
-      :category_id => 1
+      :category_id => 1,
+      :vote => true
     },
     "Add title to letters sent" => {
         :description => "This will not require a ton of work!",
-        :category_id => 1
+        :category_id => 1,
+        :vote => true
     },
     "Change Edit Activist to View Activist" => {
         :description => "This will not require a ton of work! Simple change.",
-        :category_id => 2
+        :category_id => 2,
+        :vote => false
     }
   }
 
@@ -40,5 +43,6 @@ categories_list = [
     p.name = request
     p.description = request_hash[:description]
     p.category_id = request_hash[:category_id]
+    p.vote = request_hash[:vote]
     p.save
   end
